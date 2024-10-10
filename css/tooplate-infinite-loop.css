@@ -101,7 +101,7 @@ blockquote {
 }
 
 .tm-navbar.scroll .navbar-brand {
-  color: #369;
+  color: #ffcc00;
 }
 
 .nav-item {
@@ -269,9 +269,8 @@ blockquote {
 #testimonials {
   color: white;
   background-image: url(../images/test.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100%;
   position: relative;
 }
 
@@ -517,7 +516,7 @@ figure.effect-honey:hover h2 i {
   background-image: url(../images/test2.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   min-height: 980px;
   position: relative;
   padding-bottom: 50px;
