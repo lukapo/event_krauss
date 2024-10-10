@@ -97,7 +97,7 @@ blockquote {
 
 .navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
-  color: #38B;
+  color: #ffcc00;
 }
 
 .tm-navbar.scroll .navbar-brand {
@@ -120,7 +120,7 @@ blockquote {
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
   color: #FFF;
-  background-color: #369;
+  background-color: #ffcc00;
 }
 
 .navbar-toggler {
@@ -229,7 +229,7 @@ blockquote {
 .tm-down-arrow {
   	color: #FFF;
     cursor: pointer;
-    background: #357;
+    background: #ffcc00;
     padding: 15px 40px;
     transition: all 0.3s ease;
 }
@@ -237,7 +237,7 @@ blockquote {
 .tm-down-arrow:hover,
 .tm-down-arrow:focus {
   color: #FFF;
-  background: #37A;
+  background: #ffe100;
   padding: 20px 50px;
 }
 
