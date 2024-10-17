@@ -11,7 +11,7 @@ https://www.tooplate.com/view/2117-infinite-loop
 body {
 	font-family: "Raleway", sans-serif;
 	font-size: 1.2em;
-  color: #707070;
+  color: #fff;;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -47,6 +47,7 @@ blockquote {
 .tm-section-pad-top {
   padding-top: 80px;
   padding-bottom: 40px;
+  background-color: black;
 }
 
 .tm-content-box {
@@ -55,7 +56,7 @@ blockquote {
 }
 
 .tm-text-primary {
-  color: #37A;
+  color: #ffcc00;
 }
 
 .tm-font-big {
@@ -80,13 +81,13 @@ blockquote {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background-color: transparent;
+  background-color: #0000007e;
   transition: all 0.3s ease;
 }
 
 .tm-navbar.scroll {
-  background-color: white;
-  border-bottom: 1px solid #e9ecef;
+  background-color: #000;
+  border-bottom: 2px solid #e9ecef;
 }
 
 .navbar-brand {
@@ -113,7 +114,7 @@ blockquote {
 }
 
 .tm-navbar.scroll .tm-nav-link {
-  color: #369;
+  color: #FFF;
 }
 
 .tm-navbar.scroll .tm-nav-link:hover,
@@ -509,6 +510,12 @@ figure.effect-honey:hover h2 i {
 	}
 
 /* Contact */
+
+.tm-container-contact .row,
+.tm-testimonials-content .row {
+  padding: 25px;
+  background-color: #0000007e;
+}
 
 #contact {
   color: white;
