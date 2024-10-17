@@ -97,11 +97,11 @@ blockquote {
 
 .navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
-  color: #ffcc00;
+  color: #e6c805d7;
 }
 
 .tm-navbar.scroll .navbar-brand {
-  color: #ffcc00;
+  color: #e6c805d7;
 }
 
 .nav-item {
@@ -120,7 +120,7 @@ blockquote {
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
   color: #FFF;
-  background-color: #ffcc00;
+  background-color: #e6c805d7;
 }
 
 .navbar-toggler {
@@ -198,11 +198,17 @@ blockquote {
 .tm-hero-title {
   font-size: 3.5rem;
   text-shadow: 2px 2px 2px #333;
+  transition: font-size 0.3s ease-in-out;
 }
 
 .tm-hero-subtitle {
   text-shadow: 2px 2px 2px #333;
 }
+
+.tm-hero-title:hover {
+  font-size: 3.8rem;
+}
+
 
 .tm-intro-next {
   position: absolute;
@@ -227,17 +233,16 @@ blockquote {
 }
 
 .tm-down-arrow {
-  	color: #FFF;
+  	color: #e6c805d7;
     cursor: pointer;
-    background: #ffcc00;
+    background: #00000080;
     padding: 15px 40px;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .tm-down-arrow:hover,
 .tm-down-arrow:focus {
   color: #FFF;
-  background: #ffe100;
   padding: 20px 50px;
 }
 
@@ -557,14 +562,14 @@ figure.effect-honey:hover h2 i {
 .tm-btn-submit {
 	font-size: 0.9em;
 	color: #fff;
-	background-color: #369;
+	background-color: #e6c805d7;
 	width: 50%;
 	margin-bottom: 60px;
 }
 
 .tm-btn-submit:hover {
 	color: #fff;
-	background-color: #38B;
+	background-color: #e6c805;
 }
 
 ::placeholder {
@@ -585,7 +590,7 @@ figure.effect-honey:hover h2 i {
 
 .tm-footer {
   position: absolute;
-  bottom: 45px;
+  bottom: 10px;
   left: 0;
   right: 0;
   padding: 0 15px;
