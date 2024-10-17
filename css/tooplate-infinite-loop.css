@@ -56,7 +56,7 @@ blockquote {
 }
 
 .tm-text-primary {
-  color: #ffcc00;
+  color: white;
 }
 
 .tm-font-big {
@@ -98,11 +98,11 @@ blockquote {
 
 .navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
-  color: #ffcc00;
+  color: #e6c805;
 }
 
 .tm-navbar.scroll .navbar-brand {
-  color: #ffcc00;
+  color: #e6c805;
 }
 
 .nav-item {
@@ -121,7 +121,7 @@ blockquote {
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
   color: #FFF;
-  background-color: #ffcc00;
+  background-color: #e6c805;
 }
 
 .navbar-toggler {
@@ -230,7 +230,7 @@ blockquote {
 .tm-down-arrow {
   	color: #FFF;
     cursor: pointer;
-    background: #ffcc00;
+    background: #e6c805;
     padding: 15px 40px;
     transition: all 0.3s ease;
 }
@@ -238,7 +238,7 @@ blockquote {
 .tm-down-arrow:hover,
 .tm-down-arrow:focus {
   color: #FFF;
-  background: #ffe100;
+  background: #e6c805;
   padding: 20px 50px;
 }
 
@@ -345,14 +345,19 @@ blockquote {
   margin: 0 13px;
 }
 
+.slick-dots li button:before {
+  color: white;
+  opacity: 0.5;
+}
+
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before,
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  color: #3ba0dd;
+  color: #e6c805;
 }
 
-.tm-testimonials-carousel .slick-dots li button:before {
+/* .tm-testimonials-carousel .slick-dots li button:before {
   color: white;
   opacity: 0.5;
 }
@@ -362,7 +367,7 @@ blockquote {
 .tm-testimonials-carousel .slick-dots li.slick-active button:before {
   color: white;
   opacity: 1;
-}
+} */
 
 .slick-dots li button:before {
   font-size: 18px;
@@ -548,7 +553,7 @@ figure.effect-honey:hover h2 i {
 
 .item-link:hover i,
 .item-link:hover span {
-  color: #3496d8;
+  color: #e6c805;
 }
 
 .tm-input {
@@ -564,14 +569,14 @@ figure.effect-honey:hover h2 i {
 .tm-btn-submit {
 	font-size: 0.9em;
 	color: #fff;
-	background-color: #369;
+	background-color: #e6c805d7;
 	width: 50%;
 	margin-bottom: 60px;
 }
 
 .tm-btn-submit:hover {
 	color: #fff;
-	background-color: #38B;
+	background-color: #e6c805;
 }
 
 ::placeholder {
