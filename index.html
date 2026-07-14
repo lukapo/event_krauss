@@ -1,581 +1,427 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Event Krauss</title>
-  <!-- ikone -->
-  <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
-  <!-- carousel -->
-  <link rel="stylesheet" href="slick/slick.css">
-  <link rel="stylesheet" href="slick/slick-theme.css">
-  <!-- iskakanje slika -->
-  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
-  <!--
-Tooplate 2117 Infinite Loop
-https://www.tooplate.com/view/2117-infinite-loop
--->
+  <meta name="description" content="Event Krauss — Restoran Bellevue u Klokovcu. Premium prostor za vjenčanja, krštenja, pričesti, krizme, rođendane i poslovne evente." />
+  <title>Event Krauss | Restoran Bellevue — Prostor za nezaboravne događaje</title>
 
+  <link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" sizes="180x180" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Event Krauss | Restoran Bellevue" />
+  <meta property="og:description" content="Premium prostor za vjenčanja, proslave i poslovne događaje u srcu prirode — Klokovec, Hrvatska." />
+  <meta property="og:image" content="images/header-opt.jpg" />
+  <meta property="og:locale" content="hr_HR" />
+  <meta property="og:site_name" content="Event Krauss" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Event Krauss | Restoran Bellevue" />
+  <meta name="twitter:description" content="Premium prostor za vjenčanja, proslave i poslovne događaje u srcu prirode — Klokovec, Hrvatska." />
+  <meta name="twitter:image" content="images/header-opt.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Event Krauss — Restoran Bellevue",
+    "description": "Premium prostor za organizaciju vjenčanja, krštenja, pričesti, krizme, rođendana i poslovnih događaja.",
+    "image": "images/header-opt.jpg",
+    "telephone": "+385989352150",
+    "email": "cvilinderantonija@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Klokovec 185",
+      "addressLocality": "Klokovec",
+      "postalCode": "49217",
+      "addressCountry": "HR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 46.085928,
+      "longitude": 15.829672
+    },
+    "hasMap": "https://www.google.com/maps/place/Bellevue/@46.0859285,15.8322467,17z",
+    "servesCuisine": "Hrvatska kuhinja",
+    "sameAs": [
+      "https://www.instagram.com/event_krauss/",
+      "https://web.facebook.com/profile.php?id=61565451771376"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="magnific-popup/magnific-popup.css" />
+  <link rel="stylesheet" href="css/icons.css" />
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-  <!-- Hero section -->
-  <header id="infinite" class="text-white tm-font-big tm-parallax">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
-      <div class="container">
-        <div class="tm-next">
-          <a href="#infinite" class="navbar-brand">
-            <img style="color:white" src="images/ek_logo.png" alt="Event Krauss logo" width="40px">&nbsp;&nbsp;
-            Event Krauss</a>
-        </div>
+  <a href="#main-content" class="skip-link">Preskoči na sadržaj</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars navbar-toggler-icon"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link tm-nav-link" href="#infinite">Početna</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link tm-nav-link" href="#whatwedo">O nama</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link tm-nav-link" href="#testimonials">Usluge</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link tm-nav-link" href="#gallery">Galerija</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link tm-nav-link" href="#contact">Kontakt</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="text-center tm-hero-text-container">
-      <div class="tm-hero-text-container-inner">
-        <h2 class="tm-hero-title">Event Krauss</h2>
-        <p class="tm-hero-subtitle">
-          Restoran Bellevue
-          <br>
-        </p>
-      </div>
-    </div>
-
-    <div class="tm-next tm-intro-next">
-      <a href="#whatwedo" class="text-center tm-down-arrow-link">
-        <i class="fas fa-2x fa-arrow-down tm-down-arrow"></i>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="#vrh" class="brand">
+        <img src="images/ek_logo.png" alt="" class="brand__logo" width="42" height="42" />
+        Event Krauss
       </a>
-    </div>
-      <div class="text-center small tm-footer">
-         <p class="mb-0">
-      Copyright &copy; 2024 LookApp
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Otvori izbornik">
+        <svg class="icon icon--lg" aria-hidden="true"><use href="images/icons.svg#icon-bars"></use></svg>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Glavna navigacija">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link is-active" href="#vrh">Početna</a></li>
+          <li><a class="site-nav__link" href="#o-nama">O nama</a></li>
+          <li><a class="site-nav__link" href="#usluge">Usluge</a></li>
+          <li><a class="site-nav__link" href="#zasto-nas">Zašto mi</a></li>
+          <li><a class="site-nav__link" href="#galerija">Galerija</a></li>
+          <li><a class="site-nav__link" href="#jelovnici">Jelovnik</a></li>
+          <li><a class="site-nav__link site-nav__cta" href="#kontakt">Rezervacija</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <section id="whatwedo" class="tm-section-pad-top">
+  <section class="hero" id="vrh" aria-label="Uvod">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Restoran Bellevue · Klokovec</p>
+      <h1 class="hero__title">Vaš dan.<br>Naša briga.</h1>
+      <p class="hero__subtitle">Premium prostor za vjenčanja, obiteljske proslave i poslovne događaje u jedinstvenom ambijentu Restorana Bellevue.</p>
+      <div class="hero__actions">
+        <a href="#kontakt" class="btn btn--primary">Rezervirajte termin</a>
+        <a href="#galerija" class="btn btn--outline">Pogledajte galeriju</a>
+      </div>
+    </div>
+    <a href="#o-nama" class="hero__scroll" aria-label="Idi na sekciju O nama">
+      <svg class="icon icon--lg" aria-hidden="true"><use href="images/icons.svg#icon-arrow-down"></use></svg>
+    </a>
+  </section>
 
+  <main id="main-content" tabindex="-1">
+
+    <section class="section section--cream" id="o-nama">
       <div class="container">
-
-        <div class="row tm-content-box"><!-- first row -->
-          <div class="col-lg-12 col-xl-12">
-            <div class="tm-intro-text-container">
-              <h2 class="tm-text-primary mb-4 tm-section-title">O nama</h2>
-              <p class="mb-4 tm-intro-text">
-                Dobrodošli u Restoran Bellevue, mjesto gdje se svaki poseban trenutak pretvara u nezaboravno iskustvo.
-                <br>
-                Naš objekt nudi jedinstven ambijent, idealan za sve vrste proslava. Bilo da je to romantična ceremonija,
-                elegantna večera ili intimno obiteljsko okupljanje, Bellevue vam pruža nezamjenjiv spoj prirodne ljepote
-                i sofisticiranog uređenja. </p>
-              <p class="mb-4 tm-intro-text">
-                Posebnost našeg prostora ogleda se u pažljivo dizajniranom interijeru, koji odiše toplinom i
-                elegancijom. Svaka proslava kod nas je prilagođena Vašim željama - od dekoracija do organizacije hrane
-                prema vašim zahtjevima, omogućujući Vam da oblikujete događaj baš onako kako ste sanjali.
-
-                Bilo da planirate malu svadbu, rođendan, krštenje ili poslovni domjenak, Restoran Bellevue je tu da vam
-                pruži vrhunsku uslugu u zaista čarobnom okruženju.
-                <br><br>
-                Doživite ljepotu i jedinstvenost Bellevuea.
-              </p>
-
-              <div class="text-center">
-                <a href=""><img src="./images/clipart735576.png" alt="Facebook logo" aria-label="Visit out Facebook page" width="50" ></a>
-                <a href=""><img src="./images/instagram-icon.png" alt="Instagram logo" aria-label="Visit out Facebook page" width="50" ></a>
+        <div class="about__grid">
+          <div class="about__text">
+            <span class="section-label">O nama</span>
+            <h2 class="section-title">Event Krauss &amp; Restoran Bellevue</h2>
+            <p>Dobrodošli u Restoran Bellevue — mjesto gdje se svaki poseban trenutak pretvara u nezaboravno iskustvo. Smješteni u srcu prirode kod Klokovca, spajamo eleganciju, toplinu i pažnju posvećenu svakom detalju.</p>
+            <p>Event Krauss je vaš partner u organizaciji događaja — od intimnog obiteljskog okupljanja do svečanog vjenčanja. Svaku proslavu prilagođavamo vašim željama: jelovnik, dekoracija, raspored sjedenja i cjelokupna atmosfera.</p>
+            <p>Bilo da planirate vjenčanje, krštenje, pričest, krizmu ili poslovni event — Bellevue vam pruža prostor u kojem se gosti osjećaju dobrodošlo, a vi možete u miru uživati u svom danu.</p>
+            <div class="about__stats">
+              <div class="stat">
+                <span class="stat__number">100+</span>
+                <span class="stat__label">Organiziranih proslava</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number">150+</span>
+                <span class="stat__label">Kapacitet prostora</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number">360°</span>
+                <span class="stat__label">Organizacija događaja</span>
               </div>
             </div>
           </div>
-
-        </div><!-- first row -->
-
-      <!--   <div class="row tm-content-box">
-          <div class="col-lg-1">
-            <i class="far fa-3x fa-chart-bar text-center tm-icon"></i>
-          </div>
-          <div class="col-lg-5">
-            <div class="tm-intro-text-container">
-              <h2 class="tm-text-primary mb-4">Market Analysis</h2>
-              <p class="mb-4 tm-intro-text">
-                Praesent sed pharetra lorem, blandit convallis mi. Aenean ornare elit ac metus lacinia, sed iaculis nibh
-                semper. Pellentesque est urna.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-1">
-            <i class="far fa-3x fa-comment-alt text-center tm-icon"></i>
-          </div>
-          <div class="col-lg-5">
-            <div class="tm-intro-text-container">
-              <h2 class="tm-text-primary mb-4">Fast Support</h2>
-              <p class="mb-4 tm-intro-text">
-                Credit goes to <a rel="nofollow" href="https://www.pexels.com">Pexels</a> website for all images used in
-                this template. Cras condimentum mi et sapien dignissim luctus.</p>
-            </div>
-          </div>
-
-        </div> 
-
-        <div class="row tm-content-box">
-          <div class="col-lg-1">
-            <i class="fas fa-3x fa-fingerprint text-center tm-icon"></i>
-          </div>
-          <div class="col-lg-5">
-            <div class="tm-intro-text-container">
-              <h2 class="tm-text-primary mb-4">Top Security</h2>
-              <p class="mb-4 tm-intro-text">
-                You have <strong>no</strong> authority to post this template as a ZIP file on your template collection
-                websites. You can <strong>use</strong> this template for your commercial websites.</p>
-
-              <div class="tm-continue">
-                <a href="#testimonials" class="tm-intro-text tm-btn-primary">Learn More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-1">
-            <i class="fas fa-3x fa-users text-center tm-icon"></i>
-          </div>
-          <div class="col-lg-5">
-            <div class="tm-intro-text-container">
-              <h2 class="tm-text-primary mb-4">Social Work</h2>
-              <p class="mb-4 tm-intro-text">
-                You can change <a href="https://fontawesome.com/icons?d=gallery">Font Awesome icons</a> by either
-                <b><em>fas or far</em></b> in the HTML codes. For Examples:<br>
-                <em>&lt;i class=&quot;fas fa-users&quot;&gt;&lt;i class=&quot;far fa-chart-bar&quot;&gt;</em>
-              </p>
-
-              <div class="tm-continue">
-                <a href="#testimonials" class="tm-intro-text tm-btn-primary">Details</a>
-              </div>
-            </div>
-          </div>
-
-        </div> -->
-
-      </div>
-
-    </section>
-
-    <section id="testimonials" class="tm-section-pad-top tm-parallax-2">
-      <div class="container tm-testimonials-content">
-        <div class="row">
-          <div class="col-lg-12 tm-content-box">
-            <h2 class="text-white text-center mb-4 tm-section-title">Usluge</h2>
-            <p class="mx-auto tm-section-desc text-center">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, deleniti.
-            </p>
-            <div class="mx-auto tm-gallery-container tm-gallery-container-2">
-              <div class="tm-testimonials-carousel">
-                <div class="tm-testimonial-item">
-                  <h3>Lorem, ipsum.</h3>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id obcaecati quos adipisci corrupti magnam totam.</p>
-                </div>
-
-                <div class="tm-testimonial-item">
-                  <h3>Lorem, ipsum.</h3>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id obcaecati quos adipisci corrupti magnam totam.</p>
-                </div>
-                <div class="tm-testimonial-item">
-                  <h3>Lorem, ipsum.</h3>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id obcaecati quos adipisci corrupti magnam totam.</p>
-                </div>
-                <div class="tm-testimonial-item">
-                  <h3>Lorem, ipsum.</h3>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id obcaecati quos adipisci corrupti magnam totam.</p>
-                </div>
-
-                <div class="tm-testimonial-item">
-                  <h3>Lorem, ipsum.</h3>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id obcaecati quos adipisci corrupti magnam totam.</p>
-                </div>
-
-                <div class="tm-testimonial-item">
-                  <h3>Lorem, ipsum.</h3>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id obcaecati quos adipisci corrupti magnam totam.</p>
-                </div>
-
-                <div class="tm-testimonial-item">
-                  <h3>Lorem, ipsum.</h3>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id obcaecati quos adipisci corrupti magnam totam.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tm-bg-overlay"></div>
-    </section>
-
-    <section id="gallery" class="tm-section-pad-top">
-      <div class="container tm-container-gallery">
-        <div class="row">
-          <div class="text-center col-12">
-            <h2 class="tm-text-primary tm-section-title mb-4">Galerija</h2>
-            <p class="mx-auto tm-section-desc">
-              Otkrijte ljepotu i jedinstvenost Restorana Bellevue kroz našu galeriju.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="mx-auto tm-gallery-container">
-              <div class="grid tm-gallery">
-                <a href="images/noc_izvana.jpg">
-                  <figure class="effect-honey tm-gallery-item">
-                    <img src="images/noc_izvana.jpg" alt="Image 1" class="img-fluid">
-                    <figcaption>
-                      <h2><i>Večernji <span>doživljaj</span></i></h2>
-                    </figcaption>
-                  </figure>
-                </a>
-                <a href="images/img1.png">
-                  <figure class="effect-honey tm-gallery-item">
-                    <img src="images/img1.png" alt="Image 3" class="img-fluid">
-                    <figcaption>
-                      <h2><i>Uređenje <span>stolova</span></i></h2>
-                    </figcaption>
-                  </figure>
-                </a>
-                <a href="images/img3.png">
-                  <figure class="effect-honey tm-gallery-item">
-                    <img src="images/img3.png" alt="Image 4" class="img-fluid">
-                    <figcaption>
-                      <h2><i>Slike <span>Krauss</span></i></h2>
-                    </figcaption>
-                  </figure>
-                </a>
-                <a href="images/img4.png">
-                  <figure class="effect-honey tm-gallery-item">
-                    <img src="images/img4.png" alt="Image 4" class="img-fluid">
-                    <figcaption>
-                      <h2><i>Slike <span>Krauss</span></i></h2>
-                    </figcaption>
-                  </figure>
-                </a>
-                <a href="images/img5.png">
-                  <figure class="effect-honey tm-gallery-item">
-                    <img src="images/img5.png" alt="Image 4" class="img-fluid">
-                    <figcaption>
-                      <h2><i>Slike <span>Krauss</span></i></h2>
-                    </figcaption>
-                  </figure>
-                </a>
-                <a href="images/img6.png">
-                  <figure class="effect-honey tm-gallery-item">
-                    <img src="images/img6.png" alt="Image 4" class="img-fluid">
-                    <figcaption>
-                      <h2><i>Slike <span>Krauss</span></i></h2>
-                    </figcaption>
-                  </figure>
-                </a>
-                <a href="images/dan_izvana.jpg">
-                  <figure class="effect-honey tm-gallery-item">
-                    <img src="images/dan_izvana.jpg" alt="Image 2" class="img-fluid">
-                    <figcaption>
-                      <h2><i>Dnevni <span>doživljaj</span></i></h2>
-                    </figcaption>
-                  </figure>
-                </a>
-                <a href="images/img2.png">
-                  <figure class="effect-honey tm-gallery-item">
-                    <img src="images/img2.png" alt="Image 4" class="img-fluid">
-                    <figcaption>
-                      <h2><i>Slike <span>Krauss</span></i></h2>
-                    </figcaption>
-                  </figure>
-                </a>
-              </div>
-            </div>
+          <div class="about__image">
+            <picture>
+              <source srcset="images/gallery/img3.webp" type="image/webp">
+              <img src="images/gallery/img3.jpg" alt="Interijer Restorana Bellevue" width="863" height="835" loading="lazy">
+            </picture>
           </div>
         </div>
       </div>
     </section>
-    
-    <!-- Contact -->
-    <section id="contact" class="tm-section-pad-top tm-parallax-2">
 
-      <div class="container tm-container-contact">
-        
-        <div class="row">
-          
-          <div class="text-center col-12">
-            <h2 class="tm-section-title mb-4">Kontak</h2>
-            <p class="mb-5">
-              Obratite nam se s povjerenjem
-            </p><br>
-          </div>
+    <section class="section section--dark" id="usluge">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="section-label">Usluge</span>
+          <h2 class="section-title">Proslave koje stvaramo s vama</h2>
+          <p class="section-desc">Od najvažnijih obiteljskih trenutaka do poslovnih okupljanja — svaki događaj zaslužuje pažnju, eleganciju i besprijekornu organizaciju.</p>
+        </header>
 
-          <div class="col-sm-12 col-md-6">
-            <form action="" method="get">
-              <input id="name" name="name" type="text" placeholder="Vaše ime" class="tm-input" required />
-              <input id="email" name="email" type="email" placeholder="Vaš e-mail" class="tm-input" required />
-              <textarea id="message" name="message" rows="8" placeholder="Vaša poruka" class="tm-input" required></textarea>
-              <button type="submit" class="btn tm-btn-submit">Pošalji</button>
-            </form>
-          </div>
-
-          <div class="col-sm-12 col-md-6">
-
-            <div class="contact-item">
-              <a rel="nofollow" href="" class="item-link">
-                <i class="far fa-2x fa-comment mr-4"></i>
-                <span class="mb-0">WhatsApp</span>
-              </a>
-            </div>
-
-            <div class="contact-item">
-              <a rel="nofollow" href="mailto:mail@company.com" class="item-link">
-                <i class="far fa-2x fa-envelope mr-4"></i>
-                <span class="mb-0">eventkrauss@company.com</span>
-              </a>
-            </div>
-
-            <div class="contact-item">
-              <a rel="nofollow" href="https://www.google.com/maps" class="item-link">
-                <i class="fas fa-2x fa-map-marker-alt mr-4"></i>
-                <span class="mb-0">Gdje smo?</span>
-              </a>
-            </div>
-
-            <div class="contact-item">
-              <a rel="nofollow" href="tel:+385911234567" class="item-link">
-                <i class="fas fa-2x fa-phone-square mr-4"></i>
-                <span class="mb-0">+385911234567</span>
-              </a>
-            </div>
-
-            <div class="contact-item">&nbsp;</div>
-
-          </div>
-
-
-        </div><!-- row ending -->
-
+        <div class="services-grid">
+          <article class="service-card">
+            <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-heart"></use></svg>
+            <h3 class="service-card__title">Vjenčanja</h3>
+            <p class="service-card__text">Intimna ili svečana svadbena proslava u nezaboravnom okruženju, prilagođena vašem stilu i broju gostiju.</p>
+          </article>
+          <article class="service-card">
+            <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-child"></use></svg>
+            <h3 class="service-card__title">Krštenja</h3>
+            <p class="service-card__text">Topla i nježna proslava najljepšeg obiteljskog trenutka, s pažnjom posvećenom i malim i velikim gostima.</p>
+          </article>
+          <article class="service-card">
+            <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-star"></use></svg>
+            <h3 class="service-card__title">Prve pričesti</h3>
+            <p class="service-card__text">Svečan dan vašeg djeteta zaslužuje poseban ambijent, pažljivo osmišljen jelovnik i besprijekornu uslugu.</p>
+          </article>
+          <article class="service-card">
+            <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-star"></use></svg>
+            <h3 class="service-card__title">Krizme</h3>
+            <p class="service-card__text">Proslava vjerskog sakramenta u elegantnom prostoru, uz obiteljsko okupljanje i nezaboravnu atmosferu.</p>
+          </article>
+          <article class="service-card">
+            <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-cake"></use></svg>
+            <h3 class="service-card__title">Rođendani</h3>
+            <p class="service-card__text">Od dječjih proslava do odraslih rođendana — stvaramo dan koji ćete s radošću pamtiti.</p>
+          </article>
+          <article class="service-card">
+            <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-briefcase"></use></svg>
+            <h3 class="service-card__title">Poslovni eventi</h3>
+            <p class="service-card__text">Korporativni domjenak, team building ili poslovna večera u reprezentativnom prostoru s profesionalnom uslugom.</p>
+          </article>
+          <article class="service-card">
+            <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-champagne"></use></svg>
+            <h3 class="service-card__title">Domjenak</h3>
+            <p class="service-card__text">Intimno obiteljsko okupljanje ili svečani domjenak u toplom ambijentu, fleksibilno planiran prema vašim željama.</p>
+          </article>
+          <article class="service-card">
+            <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-calendar"></use></svg>
+            <h3 class="service-card__title">Ostale proslave</h3>
+            <p class="service-card__text">Godišnjice, jubileji, mature i sve posebne prigode — prilagođavamo prostor i uslugu svakom vašem događaju.</p>
+          </article>
+        </div>
       </div>
     </section>
+
+    <section class="section section--elevated" id="zasto-nas">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="section-label">Zašto odabrati nas</span>
+          <h2 class="section-title">Iskustvo koje stvara razliku</h2>
+          <p class="section-desc">Vi donosite viziju — mi brinemo o svakom detalju kako biste vi i vaši gosti uživali u nezaboravnom danu.</p>
+        </header>
+
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <svg class="benefit-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-star"></use></svg>
+            <h3 class="benefit-card__title">Dugogodišnje iskustvo</h3>
+            <p class="benefit-card__text">Brojne uspješno organizirane proslave i zadovoljni gosti koji nam se vraćaju za svaku važnu prigodu.</p>
+          </article>
+          <article class="benefit-card">
+            <svg class="benefit-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-users"></use></svg>
+            <h3 class="benefit-card__title">Profesionalna organizacija</h3>
+            <p class="benefit-card__text">Od prvog upita do završetka događaja — koordiniramo sve kako biste vi mogli biti prisutni u trenutku.</p>
+          </article>
+          <article class="benefit-card">
+            <svg class="benefit-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-utensils"></use></svg>
+            <h3 class="benefit-card__title">Prilagođeni jelovnik</h3>
+            <p class="benefit-card__text">Jelovnik sastavljamo prema vašim željama, broju gostiju i vrsti proslave — kvaliteta hrane je naš prioritet.</p>
+          </article>
+          <article class="benefit-card">
+            <svg class="benefit-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-users"></use></svg>
+            <h3 class="benefit-card__title">Prostor za sve prigode</h3>
+            <p class="benefit-card__text">Fleksibilan raspored sjedenja i kapacitet prilagođen intimnim proslavama i većim okupljanjima.</p>
+          </article>
+          <article class="benefit-card">
+            <svg class="benefit-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-car"></use></svg>
+            <h3 class="benefit-card__title">Parking i lokacija</h3>
+            <p class="benefit-card__text">Prostor s parkingom u mirnom okruženju Klokovca — lako dostupan, a daleko od gradske vreve.</p>
+          </article>
+          <article class="benefit-card">
+            <svg class="benefit-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-heart"></use></svg>
+            <h3 class="benefit-card__title">Osobni pristup</h3>
+            <p class="benefit-card__text">Svaki događaj tretiramo jedinstveno — vaše želje i vizija u centru su naše pažnje od početka do kraja.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="galerija">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="section-label">Galerija</span>
+          <h2 class="section-title">Doživite Bellevue</h2>
+          <p class="section-desc">Pogledajte atmosferu, uređenje i ljepotu prostora koji čini svaku proslavu posebnom.</p>
+        </header>
+
+        <div class="gallery-grid">
+          <a href="images/gallery/noc_izvana.jpg" class="gallery-item gallery-item--wide">
+            <picture>
+              <source srcset="images/gallery/noc_izvana.webp" type="image/webp">
+              <img src="images/gallery/noc_izvana.jpg" alt="Večernji doživljaj Restorana Bellevue" width="845" height="845" loading="lazy">
+            </picture>
+            <span class="gallery-item__overlay"><span class="gallery-item__caption">Večernji doživljaj</span></span>
+          </a>
+          <a href="images/gallery/img1.jpg" class="gallery-item">
+            <picture>
+              <source srcset="images/gallery/img1.webp" type="image/webp">
+              <img src="images/gallery/img1.jpg" alt="Uređenje stolova" width="744" height="742" loading="lazy">
+            </picture>
+            <span class="gallery-item__overlay"><span class="gallery-item__caption">Uređenje stolova</span></span>
+          </a>
+          <a href="images/gallery/dan_izvana.jpg" class="gallery-item gallery-item--tall">
+            <picture>
+              <source srcset="images/gallery/dan_izvana.webp" type="image/webp">
+              <img src="images/gallery/dan_izvana.jpg" alt="Dnevni doživljaj" width="1200" height="800" loading="lazy">
+            </picture>
+            <span class="gallery-item__overlay"><span class="gallery-item__caption">Dnevni doživljaj</span></span>
+          </a>
+          <a href="images/gallery/img3.jpg" class="gallery-item">
+            <picture>
+              <source srcset="images/gallery/img3.webp" type="image/webp">
+              <img src="images/gallery/img3.jpg" alt="Interijer prostora" width="863" height="835" loading="lazy">
+            </picture>
+            <span class="gallery-item__overlay"><span class="gallery-item__caption">Interijer</span></span>
+          </a>
+          <a href="images/gallery/img4.jpg" class="gallery-item">
+            <picture>
+              <source srcset="images/gallery/img4.webp" type="image/webp">
+              <img src="images/gallery/img4.jpg" alt="Ambijent proslave" width="855" height="831" loading="lazy">
+            </picture>
+            <span class="gallery-item__overlay"><span class="gallery-item__caption">Ambijent</span></span>
+          </a>
+          <a href="images/gallery/img5.jpg" class="gallery-item gallery-item--wide">
+            <picture>
+              <source srcset="images/gallery/img5.webp" type="image/webp">
+              <img src="images/gallery/img5.jpg" alt="Prostor za događaje" width="856" height="831" loading="lazy">
+            </picture>
+            <span class="gallery-item__overlay"><span class="gallery-item__caption">Prostor za događaje</span></span>
+          </a>
+          <a href="images/gallery/img6.jpg" class="gallery-item">
+            <picture>
+              <source srcset="images/gallery/img6.webp" type="image/webp">
+              <img src="images/gallery/img6.jpg" alt="Detalj uređenja" width="860" height="831" loading="lazy">
+            </picture>
+            <span class="gallery-item__overlay"><span class="gallery-item__caption">Detalj uređenja</span></span>
+          </a>
+          <a href="images/gallery/img2.jpg" class="gallery-item">
+            <picture>
+              <source srcset="images/gallery/img2.webp" type="image/webp">
+              <img src="images/gallery/img2.jpg" alt="Pogled na Bellevue" width="812" height="497" loading="lazy">
+            </picture>
+            <span class="gallery-item__overlay"><span class="gallery-item__caption">Bellevue</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cream" id="jelovnici">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="section-label">Jelovnik</span>
+          <h2 class="section-title">Naš jelovnik</h2>
+          <p class="section-desc">Pregledajte i preuzmite jelovnik za proslave. Za personalizirani jelovnik prilagođen vašem događaju, javite nam se.</p>
+        </header>
+
+        <div class="menus-grid">
+          <article class="menu-card">
+            <svg class="menu-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-utensils"></use></svg>
+            <h3 class="menu-card__title">Jelovnik Event Krauss</h3>
+            <p class="menu-card__text">Svečani jelovnik za vjenčanja, krštenja, rođendane, poslovne evente i ostale proslave — od predjela do deserta.</p>
+            <a href="menus/jelovnik.pdf" class="btn btn--dark" download>
+              <svg class="icon" aria-hidden="true"><use href="images/icons.svg#icon-download"></use></svg>
+              Preuzmi PDF
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="kontakt">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Kontakt</span>
+          <h2 class="section-title">Rezervirajte svoj termin</h2>
+          <p class="section-desc">Javite nam se s povjerenjem — rado ćemo odgovoriti na sva pitanja i pomoći vam isplanirati savršen događaj.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-list">
+            <a href="tel:+385989352150" class="contact-link">
+              <svg class="contact-link__icon" aria-hidden="true"><use href="images/icons.svg#icon-phone"></use></svg>
+              <span>
+                <span class="contact-link__label">Telefon</span>
+                <span class="contact-link__value">+385 98 935 2150</span>
+              </span>
+            </a>
+            <a href="https://wa.me/385989352150" class="contact-link" target="_blank" rel="noopener noreferrer">
+              <svg class="contact-link__icon" aria-hidden="true"><use href="images/icons.svg#icon-whatsapp"></use></svg>
+              <span>
+                <span class="contact-link__label">WhatsApp</span>
+                <span class="contact-link__value">Pošaljite nam poruku</span>
+              </span>
+            </a>
+            <a href="mailto:cvilinderantonija@gmail.com" class="contact-link">
+              <svg class="contact-link__icon" aria-hidden="true"><use href="images/icons.svg#icon-envelope"></use></svg>
+              <span>
+                <span class="contact-link__label">E-mail</span>
+                <span class="contact-link__value">Pošaljite nam e-mail</span>
+              </span>
+            </a>
+            <a href="https://www.google.com/maps/place/Bellevue/@46.0859285,15.8322467,17z" class="contact-link" target="_blank" rel="noopener noreferrer">
+              <svg class="contact-link__icon" aria-hidden="true"><use href="images/icons.svg#icon-map-marker"></use></svg>
+              <span>
+                <span class="contact-link__label">Adresa</span>
+                <span class="contact-link__value">Klokovec 185, 49217 Klokovec, Hrvatska</span>
+              </span>
+            </a>
+          </div>
+          <div class="contact-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2767.253285141681!2d15.829671775795797!3d46.08592849174239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765eb0028c0914d%3A0xa37e278c30e354f0!2sBellevue!5e0!3m2!1shr!2shr!4v1784032074501!5m2!1shr!2shr"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              title="Lokacija Restorana Bellevue">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-
-
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-brand__name">Event Krauss</p>
+          <p class="footer-brand__text">Restoran Bellevue — premium prostor za vjenčanja, proslave i poslovne događaje u Klokovcu.</p>
+          <div class="footer-social">
+            <a href="https://web.facebook.com/profile.php?id=61565451771376" class="footer-social__link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg class="icon" aria-hidden="true"><use href="images/icons.svg#icon-facebook"></use></svg>
+            </a>
+            <a href="https://www.instagram.com/event_krauss/" class="footer-social__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg class="icon" aria-hidden="true"><use href="images/icons.svg#icon-instagram"></use></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading">Navigacija</p>
+          <ul class="footer-links">
+            <li><a href="#o-nama">O nama</a></li>
+            <li><a href="#usluge">Usluge</a></li>
+            <li><a href="#galerija">Galerija</a></li>
+            <li><a href="#jelovnici">Jelovnik</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Kontakt</p>
+          <ul class="footer-links">
+            <li><a href="tel:+385989352150">+385 98 935 2150</a></li>
+            <li><a href="https://wa.me/385989352150">WhatsApp</a></li>
+            <li><a href="mailto:cvilinderantonija@gmail.com">E-mail</a></li>
+            <li>Klokovec 185, Klokovec</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2026 Event Krauss. Sva prava pridržana.</p>
+    </div>
+  </footer>
 
   <script src="js/jquery-1.9.1.min.js"></script>
-  <script src="slick/slick.min.js"></script>
   <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
-  <script src="js/easing.min.js"></script>
-  <script src="js/jquery.singlePageNav.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script>
-
-    function getOffSet() {
-      var _offset = 450;
-      var windowHeight = window.innerHeight;
-
-      if (windowHeight > 500) {
-        _offset = 400;
-      }
-      if (windowHeight > 680) {
-        _offset = 300
-      }
-      if (windowHeight > 830) {
-        _offset = 210;
-      }
-
-      return _offset;
-    }
-
-    function setParallaxPosition($doc, multiplier, $object) {
-      var offset = getOffSet();
-      var from_top = $doc.scrollTop(),
-        bg_css = 'center ' + (multiplier * from_top - offset) + 'px';
-      $object.css({ "background-position": bg_css });
-    }
-
-    // Parallax function
-    // Adapted based on https://codepen.io/roborich/pen/wpAsm        
-    var background_image_parallax = function ($object, multiplier, forceSet) {
-      multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-      multiplier = 1 - multiplier;
-      var $doc = $(document);
-      // $object.css({"background-attatchment" : "fixed"});
-
-      if (forceSet) {
-        setParallaxPosition($doc, multiplier, $object);
-      } else {
-        $(window).scroll(function () {
-          setParallaxPosition($doc, multiplier, $object);
-        });
-      }
-    };
-
-    var background_image_parallax_2 = function ($object, multiplier) {
-      multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-      multiplier = 1 - multiplier;
-      var $doc = $(document);
-      $object.css({ "background-attachment": "fixed" });
-
-      $(window).scroll(function () {
-        if ($(window).width() > 768) {
-          var firstTop = $object.offset().top,
-            pos = $(window).scrollTop(),
-            yPos = Math.round((multiplier * (firstTop - pos)) - 186);
-
-          var bg_css = 'center ' + yPos + 'px';
-
-          $object.css({ "background-position": bg_css });
-        } else {
-          $object.css({ "background-position": "center" });
-        }
-      });
-    };
-
-    $(function () {
-      // Hero Section - Background Parallax
-      background_image_parallax($(".tm-parallax"), 0.30, false);
-      background_image_parallax_2($("#contact"), 0.80);
-      background_image_parallax_2($("#testimonials"), 0.80);
-
-      // Handle window resize
-      window.addEventListener('resize', function () {
-        background_image_parallax($(".tm-parallax"), 0.30, true);
-      }, true);
-
-      // Detect window scroll and update navbar
-      $(window).scroll(function (e) {
-        if ($(document).scrollTop() > 120) {
-          $('.tm-navbar').addClass("scroll");
-        } else {
-          $('.tm-navbar').removeClass("scroll");
-        }
-      });
-
-      // Close mobile menu after click 
-      $('#tmNav a').on('click', function () {
-        $('.navbar-collapse').removeClass('show');
-      })
-
-      // Scroll to corresponding section with animation
-      $('#tmNav').singlePageNav({
-        'easing': 'easeInOutExpo',
-        'speed': 600
-      });
-
-      // Add smooth scrolling to all links
-      // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
-      $("a").on('click', function (event) {
-        if (this.hash !== "") {
-          event.preventDefault();
-          var hash = this.hash;
-
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 600, 'easeInOutExpo', function () {
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-
-      // Pop up
-      $('.tm-gallery').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        gallery: { enabled: true }
-      });
-
-      $('.tm-testimonials-carousel').slick({
-        dots: true,
-        prevArrow: false,
-        nextArrow: false,
-        infinite: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        responsive: [
-          {
-            breakpoint: 992,
-            settings: {
-              slidesToShow: 2
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1
-            }
-          }
-        ]
-      });
-
-      // Gallery
-      $('.tm-gallery').slick({
-        dots: true,
-        infinite: false,
-        slidesToShow: 5,
-        slidesToScroll: 2,
-        responsive: [
-          {
-            breakpoint: 1199,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      });
-    });
-  </script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
