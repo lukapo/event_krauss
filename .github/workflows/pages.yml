@@ -29,7 +29,7 @@ jobs:
       - name: Prepare site
         run: |
           mkdir site
-          cp index.html .nojekyll site/
+          cp index.html .nojekyll robots.txt sitemap.xml CNAME site/
           cp -r css js images site/
           if [ -d menus ]; then cp -r menus site/; fi
 

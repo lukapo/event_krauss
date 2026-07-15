@@ -4,32 +4,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Event Krauss — Restoran Bellevue u Klokovcu. Premium prostor za vjenčanja, krštenja, pričesti, krizme, rođendane i poslovne evente." />
-  <title>Event Krauss | Restoran Bellevue — Prostor za nezaboravne događaje</title>
+  <meta name="description" content="Event Krauss i Restoran Bellevue — organizacija proslava, catering na Vašoj lokaciji ili u restoranu te najam i postavljanje napuhanaca. Klokovec, Hrvatska." />
+  <title>Event Krauss | Restoran Bellevue — Proslave, catering i napuhanci</title>
+
+  <link rel="canonical" href="https://event-krauss.hr/" />
 
   <link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png" sizes="180x180" />
 
+  <meta property="og:url" content="https://event-krauss.hr/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Event Krauss | Restoran Bellevue" />
-  <meta property="og:description" content="Premium prostor za vjenčanja, proslave i poslovne događaje u srcu prirode — Klokovec, Hrvatska." />
-  <meta property="og:image" content="images/header-opt.jpg" />
+  <meta property="og:description" content="Organizacija proslava u Bellevueu, catering i najam napuhanaca — sve za Vašu proslavu na jednom mjestu. Klokovec, Hrvatska." />
+  <meta property="og:image" content="https://event-krauss.hr/images/hero/naslovna-opt.jpg" />
   <meta property="og:locale" content="hr_HR" />
   <meta property="og:site_name" content="Event Krauss" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Event Krauss | Restoran Bellevue" />
-  <meta name="twitter:description" content="Premium prostor za vjenčanja, proslave i poslovne događaje u srcu prirode — Klokovec, Hrvatska." />
-  <meta name="twitter:image" content="images/header-opt.jpg" />
+  <meta name="twitter:description" content="Organizacija proslava u Bellevueu, catering i najam napuhanaca — Klokovec, Hrvatska." />
+  <meta name="twitter:image" content="https://event-krauss.hr/images/hero/naslovna-opt.jpg" />
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Restaurant",
+    "@type": ["Restaurant", "LocalBusiness", "EventVenue"],
+    "@id": "https://event-krauss.hr/#organization",
     "name": "Event Krauss — Restoran Bellevue",
-    "description": "Premium prostor za organizaciju vjenčanja, krštenja, pričesti, krizme, rođendana i poslovnih događaja.",
-    "image": "images/header-opt.jpg",
-    "telephone": "+385989352150",
+    "alternateName": ["Event Krauss", "Restoran Bellevue"],
+    "description": "Event Krauss i Restoran Bellevue — organizacija proslava, catering na Vašoj lokaciji ili u restoranu te najam i postavljanje napuhanaca u Klokovcu.",
+    "url": "https://event-krauss.hr/",
+    "image": "https://event-krauss.hr/images/hero/naslovna-opt.jpg",
+    "telephone": "+385919263660",
     "email": "cvilinderantonija@gmail.com",
     "address": {
       "@type": "PostalAddress",
@@ -42,6 +48,10 @@
       "@type": "GeoCoordinates",
       "latitude": 46.085928,
       "longitude": 15.829672
+    },
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Krapinsko-zagorska županija"
     },
     "hasMap": "https://www.google.com/maps/place/Bellevue/@46.0859285,15.8322467,17z",
     "servesCuisine": "Hrvatska kuhinja",
@@ -83,7 +93,7 @@
           <li><a class="site-nav__link" href="#zasto-nas">Zašto mi</a></li>
           <li><a class="site-nav__link" href="#galerija">Galerija</a></li>
           <li><a class="site-nav__link" href="#jelovnici">Jelovnik</a></li>
-          <li><a class="site-nav__link site-nav__cta" href="#kontakt">Rezervacija</a></li>
+          <li><a class="site-nav__link site-nav__cta" href="#kontakt">Kontaktirajte nas</a></li>
         </ul>
       </nav>
     </div>
@@ -91,12 +101,12 @@
 
   <section class="hero" id="vrh" aria-label="Uvod">
     <div class="hero__content">
-      <p class="hero__eyebrow">Restoran Bellevue · Klokovec</p>
-      <h1 class="hero__title">Vaš dan.<br>Naša briga.</h1>
-      <p class="hero__subtitle">Premium prostor za vjenčanja, obiteljske proslave i poslovne događaje u jedinstvenom ambijentu Restorana Bellevue.</p>
+      <p class="hero__eyebrow">Event Krauss | Restoran Bellevue</p>
+      <h1 class="hero__title">Sve za Vašu proslavu na jednom mjestu.</h1>
+      <p class="hero__subtitle">Organiziramo nezaboravne proslave u Restoranu Bellevue, pripremamo catering za sve prigode te nudimo najam i postavljanje napuhanaca kako bi svaki događaj bio potpun.</p>
       <div class="hero__actions">
-        <a href="#kontakt" class="btn btn--primary">Rezervirajte termin</a>
-        <a href="#galerija" class="btn btn--outline">Pogledajte galeriju</a>
+        <a href="#usluge" class="btn btn--primary">Istražite ponudu</a>
+        <a href="#kontakt" class="btn btn--outline">Kontaktirajte nas</a>
       </div>
     </div>
     <a href="#o-nama" class="hero__scroll" aria-label="Idi na sekciju O nama">
@@ -112,28 +122,43 @@
           <div class="about__text">
             <span class="section-label">O nama</span>
             <h2 class="section-title">Event Krauss &amp; Restoran Bellevue</h2>
-            <p>Dobrodošli u Restoran Bellevue — mjesto gdje se svaki poseban trenutak pretvara u nezaboravno iskustvo. Smješteni u srcu prirode kod Klokovca, spajamo eleganciju, toplinu i pažnju posvećenu svakom detalju.</p>
-            <p>Event Krauss je vaš partner u organizaciji događaja — od intimnog obiteljskog okupljanja do svečanog vjenčanja. Svaku proslavu prilagođavamo vašim željama: jelovnik, dekoracija, raspored sjedenja i cjelokupna atmosfera.</p>
-            <p>Bilo da planirate vjenčanje, krštenje, pričest, krizmu ili poslovni event — Bellevue vam pruža prostor u kojem se gosti osjećaju dobrodošlo, a vi možete u miru uživati u svom danu.</p>
+            <p>Event Krauss spaja Restoran Bellevue, catering i najam napuhanaca u jednu pouzdanu ponudu za Vaše proslave. Bilo da slavite u našem prostoru ili kod kuće — brinemo o organizaciji, hrani i detaljima kako biste Vi mogli biti prisutni u trenutku.</p>
+            <p>Naš catering donosi vrhunske okuse i pažljivo aranžiranu hranu — bez stresa i bez kuhanja. U ponudi su bogati domaći naresci, pečenja i prilozi, uz jela prilagođena različitim prehrambenim potrebama Vaših gostiju.</p>
+            <div class="about__highlights">
+              <article class="highlight-card">
+                <h3 class="highlight-card__title">Bez brige oko hrane</h3>
+                <p class="highlight-card__text">Preuzimamo pripremu i posluživanje kako biste Vi uživali u druženju s gostima.</p>
+              </article>
+              <article class="highlight-card">
+                <h3 class="highlight-card__title">Domaća kuhinja</h3>
+                <p class="highlight-card__text">Bogat izbor narezaka, pečenja i priloga — estetski servirano i spremno za svečan stol.</p>
+              </article>
+              <article class="highlight-card">
+                <h3 class="highlight-card__title">Za najmlađe</h3>
+                <p class="highlight-card__text">Dječji jelovnici s omiljenim jelima poput mini burgera, pilećih prstića i hrskavih krumpirića.</p>
+              </article>
+              <article class="highlight-card">
+                <h3 class="highlight-card__title">Posebne prehrane</h3>
+                <p class="highlight-card__text">Po dogovoru pripremamo bezglutenska, vegetarijanska i druga jela prilagođena Vašim gostima.</p>
+              </article>
+            </div>
             <div class="about__stats">
-              <div class="stat">
-                <span class="stat__number">100+</span>
-                <span class="stat__label">Organiziranih proslava</span>
-              </div>
               <div class="stat">
                 <span class="stat__number">150+</span>
                 <span class="stat__label">Kapacitet prostora</span>
               </div>
               <div class="stat">
-                <span class="stat__number">360°</span>
-                <span class="stat__label">Organizacija događaja</span>
+                <span class="stat__number">100+</span>
+                <span class="stat__label">Organiziranih događaja</span>
               </div>
+             
+            
             </div>
           </div>
           <div class="about__image">
             <picture>
-              <source srcset="images/gallery/img3.webp" type="image/webp">
-              <img src="images/gallery/img3.jpg" alt="Interijer Restorana Bellevue" width="863" height="835" loading="lazy">
+              <source srcset="images/gallery/uredjenje-stolova.webp" type="image/webp">
+              <img src="images/gallery/uredjenje-stolova.jpg" alt="Svečano uređeni stolovi u Restoranu Bellevue" width="744" height="742" loading="lazy">
             </picture>
           </div>
         </div>
@@ -144,51 +169,76 @@
       <div class="container">
         <header class="section-header section-header--center">
           <span class="section-label">Usluge</span>
-          <h2 class="section-title">Proslave koje stvaramo s vama</h2>
-          <p class="section-desc">Od najvažnijih obiteljskih trenutaka do poslovnih okupljanja — svaki događaj zaslužuje pažnju, eleganciju i besprijekornu organizaciju.</p>
+          <h2 class="section-title">Sve što Vam treba za savršen događaj</h2>
+          <p class="section-desc">Od prostora i organizacije do hrane i zabave — Event Krauss i Restoran Bellevue pokrivaju cijeli doživljaj Vaše proslave.</p>
         </header>
 
-        <div class="services-grid">
-          <article class="service-card">
-            <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-heart"></use></svg>
-            <h3 class="service-card__title">Vjenčanja</h3>
-            <p class="service-card__text">Intimna ili svečana svadbena proslava u nezaboravnom okruženju, prilagođena vašem stilu i broju gostiju.</p>
+        <div class="services-pillars">
+          <article class="service-pillar" id="organizacija">
+            <svg class="service-pillar__icon" aria-hidden="true"><use href="images/icons.svg#icon-users"></use></svg>
+            <h3 class="service-pillar__title">Organizacija događaja u Bellevueu</h3>
+            <p class="service-pillar__text">Restoran Bellevue u Klokovcu pruža elegantan prostor za vjenčanja, krštenja, rođendane i poslovne evente. Brinemo o organizaciji, jelovniku i atmosferi — po želji i s najamom napuhanaca u dvorištu.</p>
           </article>
-          <article class="service-card">
-            <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-child"></use></svg>
-            <h3 class="service-card__title">Krštenja</h3>
-            <p class="service-card__text">Topla i nježna proslava najljepšeg obiteljskog trenutka, s pažnjom posvećenom i malim i velikim gostima.</p>
+          <article class="service-pillar" id="catering">
+            <svg class="service-pillar__icon" aria-hidden="true"><use href="images/icons.svg#icon-utensils"></use></svg>
+            <h3 class="service-pillar__title">Catering</h3>
+            <p class="service-pillar__text">Catering za privatne i poslovne prigode — u Restoranu Bellevue ili na Vašoj lokaciji. Prilagođavamo jelovnik broju gostiju, vrsti proslave i posebnim prehrambenim potrebama.</p>
           </article>
-          <article class="service-card">
-            <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-star"></use></svg>
-            <h3 class="service-card__title">Prve pričesti</h3>
-            <p class="service-card__text">Svečan dan vašeg djeteta zaslužuje poseban ambijent, pažljivo osmišljen jelovnik i besprijekornu uslugu.</p>
+          <article class="service-pillar" id="napuhanci">
+            <svg class="service-pillar__icon" aria-hidden="true"><use href="images/icons.svg#icon-car"></use></svg>
+            <h3 class="service-pillar__title">Najam napuhanaca</h3>
+            <p class="service-pillar__text">Izaberite napuhanac za dječje rođendane, obiteljske proslave i vanjske evente. Mogućnost osobnog preuzimanja ili dostave i postavljanja na lokaciji po Vašem izboru.</p>
           </article>
-          <article class="service-card">
-            <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-star"></use></svg>
-            <h3 class="service-card__title">Krizme</h3>
-            <p class="service-card__text">Proslava vjerskog sakramenta u elegantnom prostoru, uz obiteljsko okupljanje i nezaboravnu atmosferu.</p>
-          </article>
-          <article class="service-card">
-            <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-cake"></use></svg>
-            <h3 class="service-card__title">Rođendani</h3>
-            <p class="service-card__text">Od dječjih proslava do odraslih rođendana — stvaramo dan koji ćete s radošću pamtiti.</p>
-          </article>
-          <article class="service-card">
-            <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-briefcase"></use></svg>
-            <h3 class="service-card__title">Poslovni eventi</h3>
-            <p class="service-card__text">Korporativni domjenak, team building ili poslovna večera u reprezentativnom prostoru s profesionalnom uslugom.</p>
-          </article>
-          <article class="service-card">
-            <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-champagne"></use></svg>
-            <h3 class="service-card__title">Domjenak</h3>
-            <p class="service-card__text">Intimno obiteljsko okupljanje ili svečani domjenak u toplom ambijentu, fleksibilno planiran prema vašim željama.</p>
-          </article>
-          <article class="service-card">
-            <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-calendar"></use></svg>
-            <h3 class="service-card__title">Ostale proslave</h3>
-            <p class="service-card__text">Godišnjice, jubileji, mature i sve posebne prigode — prilagođavamo prostor i uslugu svakom vašem događaju.</p>
-          </article>
+        </div>
+
+        <div class="services-events">
+          <header class="services-events__header">
+            <h3 class="services-events__title">Događaji u Restoranu Bellevue</h3>
+            <p class="services-events__desc">Organiziramo proslave i druga obiteljska te poslovna okupljanja u prostoru prilagođenom Vašim željama, broju gostiju i prirodi događaja.</p>
+          </header>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-heart"></use></svg>
+              <h4 class="service-card__title">Vjenčanja</h4>
+              <p class="service-card__text">Intimna ili svečana svadbena proslava u nezaboravnom okruženju, prilagođena Vašem stilu i broju gostiju.</p>
+            </article>
+            <article class="service-card">
+              <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-child"></use></svg>
+              <h4 class="service-card__title">Krštenja</h4>
+              <p class="service-card__text">Topla i nježna proslava najljepšeg obiteljskog trenutka, s pažnjom posvećenom i malim i velikim gostima.</p>
+            </article>
+            <article class="service-card">
+              <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-star"></use></svg>
+              <h4 class="service-card__title">Prve pričesti</h4>
+              <p class="service-card__text">Svečan dan Vašeg djeteta zaslužuje poseban ambijent, pažljivo osmišljen jelovnik i besprijekornu uslugu.</p>
+            </article>
+            <article class="service-card">
+              <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-dove"></use></svg>
+              <h4 class="service-card__title">Krizme</h4>
+              <p class="service-card__text">Proslava vjerskog sakramenta u elegantnom prostoru, uz obiteljsko okupljanje i nezaboravnu atmosferu.</p>
+            </article>
+            <article class="service-card">
+              <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-cake"></use></svg>
+              <h4 class="service-card__title">Rođendani</h4>
+              <p class="service-card__text">Od dječjih proslava do odraslih rođendana — stvaramo dan koji ćete s radošću pamtiti.</p>
+            </article>
+            <article class="service-card">
+              <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-briefcase"></use></svg>
+              <h4 class="service-card__title">Poslovni eventi</h4>
+              <p class="service-card__text">Korporativni domjenak, team building ili poslovna večera u reprezentativnom prostoru s profesionalnom uslugom.</p>
+            </article>
+            <article class="service-card">
+              <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-champagne"></use></svg>
+              <h4 class="service-card__title">Domjenak</h4>
+              <p class="service-card__text">Intimno obiteljsko okupljanje ili svečani domjenak u toplom ambijentu, fleksibilno planiran prema Vašim željama.</p>
+            </article>
+            <article class="service-card">
+              <svg class="service-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-calendar"></use></svg>
+              <h4 class="service-card__title">Ostale prigode</h4>
+              <p class="service-card__text">Godišnjice, jubileji, mature i slična okupljanja. Po dogovoru organiziramo i karmine — dostojanstveno obiteljsko druženje uz ispraćaj pokojnika.</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -198,7 +248,7 @@
         <header class="section-header section-header--center">
           <span class="section-label">Zašto odabrati nas</span>
           <h2 class="section-title">Iskustvo koje stvara razliku</h2>
-          <p class="section-desc">Vi donosite viziju — mi brinemo o svakom detalju kako biste vi i vaši gosti uživali u nezaboravnom danu.</p>
+          <p class="section-desc">Vi donosite viziju — mi brinemo o prostoru, hrani, organizaciji i detaljima kako biste Vi i Vaši gosti uživali u nezaboravnom danu.</p>
         </header>
 
         <div class="benefits-grid">
@@ -210,27 +260,27 @@
           <article class="benefit-card">
             <svg class="benefit-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-users"></use></svg>
             <h3 class="benefit-card__title">Profesionalna organizacija</h3>
-            <p class="benefit-card__text">Od prvog upita do završetka događaja — koordiniramo sve kako biste vi mogli biti prisutni u trenutku.</p>
+            <p class="benefit-card__text">Od prvog upita do završetka događaja — koordiniramo sve kako biste Vi mogli biti prisutni u trenutku.</p>
           </article>
           <article class="benefit-card">
             <svg class="benefit-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-utensils"></use></svg>
             <h3 class="benefit-card__title">Prilagođeni jelovnik</h3>
-            <p class="benefit-card__text">Jelovnik sastavljamo prema vašim željama, broju gostiju i vrsti proslave — kvaliteta hrane je naš prioritet.</p>
+            <p class="benefit-card__text">Jelovnik sastavljamo prema Vašim željama — u Bellevueu ili na Vašoj lokaciji, uz jela za djecu i posebne prehrane.</p>
+          </article>
+          <article class="benefit-card">
+            <svg class="benefit-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-car"></use></svg>
+            <h3 class="benefit-card__title">Fleksibilna lokacija</h3>
+            <p class="benefit-card__text">Događaj u Restoranu Bellevue, catering kod Vas ili napuhanci s dostavom — prilagođavamo se Vašim planovima.</p>
           </article>
           <article class="benefit-card">
             <svg class="benefit-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-users"></use></svg>
             <h3 class="benefit-card__title">Prostor za sve prigode</h3>
-            <p class="benefit-card__text">Fleksibilan raspored sjedenja i kapacitet prilagođen intimnim proslavama i većim okupljanjima.</p>
-          </article>
-          <article class="benefit-card">
-            <svg class="benefit-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-car"></use></svg>
-            <h3 class="benefit-card__title">Parking i lokacija</h3>
-            <p class="benefit-card__text">Prostor s parkingom u mirnom okruženju Klokovca — lako dostupan, a daleko od gradske vreve.</p>
+            <p class="benefit-card__text">Kapacitet od 150+ mjesta i fleksibilan raspored sjedenja — od intimnih proslava do većih okupljanja.</p>
           </article>
           <article class="benefit-card">
             <svg class="benefit-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-heart"></use></svg>
             <h3 class="benefit-card__title">Osobni pristup</h3>
-            <p class="benefit-card__text">Svaki događaj tretiramo jedinstveno — vaše želje i vizija u centru su naše pažnje od početka do kraja.</p>
+            <p class="benefit-card__text">Svaki događaj tretiramo jedinstveno — Vaše želje i vizija u centru su naše pažnje od početka do kraja.</p>
           </article>
         </div>
       </div>
@@ -240,66 +290,72 @@
       <div class="container">
         <header class="section-header section-header--center">
           <span class="section-label">Galerija</span>
-          <h2 class="section-title">Doživite Bellevue</h2>
-          <p class="section-desc">Pogledajte atmosferu, uređenje i ljepotu prostora koji čini svaku proslavu posebnom.</p>
+          <h2 class="section-title">Pogledajte našu ponudu</h2>
+          <p class="section-desc">Restoran Bellevue, catering i napuhanci — atmosfera i detalji koji čine svaki događaj posebnim.</p>
         </header>
 
+        <div class="gallery-filters" role="tablist" aria-label="Filtri galerije">
+          <button class="gallery-filter is-active" type="button" data-filter="all" role="tab" aria-selected="true">Sve</button>
+          <button class="gallery-filter" type="button" data-filter="bellevue" role="tab" aria-selected="false">Bellevue</button>
+          <button class="gallery-filter" type="button" data-filter="napuhanci" role="tab" aria-selected="false">Napuhanci</button>
+        </div>
+
         <div class="gallery-grid">
-          <a href="images/gallery/noc_izvana.jpg" class="gallery-item gallery-item--wide glightbox" data-gallery="bellevue">
+          <a href="images/gallery/noc_izvana.jpg" class="gallery-item gallery-item--hero glightbox" data-gallery="event-krauss" data-category="bellevue">
             <picture>
               <source srcset="images/gallery/noc_izvana.webp" type="image/webp">
               <img src="images/gallery/noc_izvana.jpg" alt="Večernji doživljaj Restorana Bellevue" width="845" height="845" loading="lazy">
             </picture>
             <span class="gallery-item__overlay"><span class="gallery-item__caption">Večernji doživljaj</span></span>
           </a>
-          <a href="images/gallery/img1.jpg" class="gallery-item glightbox" data-gallery="bellevue">
+          <a href="images/gallery/detalj-svadbenog-stola.jpg" class="gallery-item glightbox" data-gallery="event-krauss" data-category="bellevue">
             <picture>
-              <source srcset="images/gallery/img1.webp" type="image/webp">
-              <img src="images/gallery/img1.jpg" alt="Uređenje stolova" width="744" height="742" loading="lazy">
+              <source srcset="images/gallery/detalj-svadbenog-stola.webp" type="image/webp">
+              <img src="images/gallery/detalj-svadbenog-stola.jpg" alt="Detalj svadbenog stola" width="863" height="835" loading="lazy">
             </picture>
-            <span class="gallery-item__overlay"><span class="gallery-item__caption">Uređenje stolova</span></span>
+            <span class="gallery-item__overlay"><span class="gallery-item__caption">Svadbeni stol</span></span>
           </a>
-          <a href="images/gallery/dan_izvana.jpg" class="gallery-item gallery-item--tall glightbox" data-gallery="bellevue">
-            <picture>
-              <source srcset="images/gallery/dan_izvana.webp" type="image/webp">
-              <img src="images/gallery/dan_izvana.jpg" alt="Dnevni doživljaj" width="1200" height="800" loading="lazy">
-            </picture>
-            <span class="gallery-item__overlay"><span class="gallery-item__caption">Dnevni doživljaj</span></span>
-          </a>
-          <a href="images/gallery/img3.jpg" class="gallery-item glightbox" data-gallery="bellevue">
+          <a href="images/gallery/img3.jpg" class="gallery-item glightbox" data-gallery="event-krauss" data-category="bellevue">
             <picture>
               <source srcset="images/gallery/img3.webp" type="image/webp">
-              <img src="images/gallery/img3.jpg" alt="Interijer prostora" width="863" height="835" loading="lazy">
+              <img src="images/gallery/img3.jpg" alt="Interijer Restorana Bellevue" width="863" height="835" loading="lazy">
             </picture>
             <span class="gallery-item__overlay"><span class="gallery-item__caption">Interijer</span></span>
           </a>
-          <a href="images/gallery/img4.jpg" class="gallery-item glightbox" data-gallery="bellevue">
-            <picture>
-              <source srcset="images/gallery/img4.webp" type="image/webp">
-              <img src="images/gallery/img4.jpg" alt="Ambijent proslave" width="855" height="831" loading="lazy">
-            </picture>
-            <span class="gallery-item__overlay"><span class="gallery-item__caption">Ambijent</span></span>
-          </a>
-          <a href="images/gallery/img5.jpg" class="gallery-item gallery-item--wide glightbox" data-gallery="bellevue">
-            <picture>
-              <source srcset="images/gallery/img5.webp" type="image/webp">
-              <img src="images/gallery/img5.jpg" alt="Prostor za događaje" width="856" height="831" loading="lazy">
-            </picture>
-            <span class="gallery-item__overlay"><span class="gallery-item__caption">Prostor za događaje</span></span>
-          </a>
-          <a href="images/gallery/img6.jpg" class="gallery-item glightbox" data-gallery="bellevue">
-            <picture>
-              <source srcset="images/gallery/img6.webp" type="image/webp">
-              <img src="images/gallery/img6.jpg" alt="Detalj uređenja" width="860" height="831" loading="lazy">
-            </picture>
-            <span class="gallery-item__overlay"><span class="gallery-item__caption">Detalj uređenja</span></span>
-          </a>
-          <a href="images/gallery/img2.jpg" class="gallery-item glightbox" data-gallery="bellevue">
+          <a href="images/gallery/img2.jpg" class="gallery-item glightbox" data-gallery="event-krauss" data-category="bellevue">
             <picture>
               <source srcset="images/gallery/img2.webp" type="image/webp">
-              <img src="images/gallery/img2.jpg" alt="Pogled na Bellevue" width="812" height="497" loading="lazy">
+              <img src="images/gallery/img2.jpg" alt="Pogled na Restoran Bellevue" width="812" height="497" loading="lazy">
             </picture>
             <span class="gallery-item__overlay"><span class="gallery-item__caption">Bellevue</span></span>
+          </a>
+          <a href="images/gallery/uredjenje-stolova.jpg" class="gallery-item glightbox" data-gallery="event-krauss" data-category="bellevue">
+            <picture>
+              <source srcset="images/gallery/uredjenje-stolova.webp" type="image/webp">
+              <img src="images/gallery/uredjenje-stolova.jpg" alt="Svečano uređeni stolovi u Restoranu Bellevue" width="744" height="742" loading="lazy">
+            </picture>
+            <span class="gallery-item__overlay"><span class="gallery-item__caption">Uređenje stolova</span></span>
+          </a>
+          <a href="images/gallery/velika-kuca-napuhanac.jpg" class="gallery-item gallery-item--third glightbox" data-gallery="event-krauss" data-category="napuhanci">
+            <picture>
+              <source srcset="images/gallery/velika-kuca-napuhanac.webp" type="image/webp">
+              <img src="images/gallery/velika-kuca-napuhanac.jpg" alt="Velika kuća napuhana za djecu" width="856" height="831" loading="lazy">
+            </picture>
+            <span class="gallery-item__overlay"><span class="gallery-item__caption">Napuhanac Velika kuća</span></span>
+          </a>
+          <a href="images/gallery/cp-napuhanac.jpg" class="gallery-item gallery-item--third glightbox" data-gallery="event-krauss" data-category="napuhanci">
+            <picture>
+              <source srcset="images/gallery/cp-napuhanac.webp" type="image/webp">
+              <img src="images/gallery/cp-napuhanac.jpg" alt="Napuhana igraonica" width="860" height="831" loading="lazy">
+            </picture>
+            <span class="gallery-item__overlay"><span class="gallery-item__caption">Tematski napuhanac</span></span>
+          </a>
+          <a href="images/gallery/minions-napuhanac.jpg" class="gallery-item gallery-item--third glightbox" data-gallery="event-krauss" data-category="napuhanci">
+            <picture>
+              <source srcset="images/gallery/minions-napuhanac.webp" type="image/webp">
+              <img src="images/gallery/minions-napuhanac.jpg" alt="Tematski napuhana za djecu" width="812" height="497" loading="lazy">
+            </picture>
+            <span class="gallery-item__overlay"><span class="gallery-item__caption">Minioni napuhanac</span></span>
           </a>
         </div>
       </div>
@@ -309,21 +365,50 @@
       <div class="container">
         <header class="section-header section-header--center">
           <span class="section-label">Jelovnik</span>
-          <h2 class="section-title">Naš jelovnik</h2>
-          <p class="section-desc">Pregledajte i preuzmite jelovnik za proslave. Za personalizirani jelovnik prilagođen vašem događaju, javite nam se.</p>
+          <h2 class="section-title">Jelovnik prilagođen Vašem događaju</h2>
+          <p class="section-desc">Izaberite jelovnik prema vrsti proslave, broju gostiju i Vašim željama. Od domaćih narezaka i pečenja do dječjih jelovnika i jela za posebne prehrane.</p>
         </header>
 
-        <div class="menus-grid">
-          <article class="menu-card">
-            <svg class="menu-card__icon" aria-hidden="true"><use href="images/icons.svg#icon-utensils"></use></svg>
-            <h3 class="menu-card__title">Jelovnik Event Krauss</h3>
-            <p class="menu-card__text">Svečani jelovnik za vjenčanja, krštenja, rođendane, poslovne evente i ostale proslave — od predjela do deserta.</p>
-            <a href="menus/jelovnik.pdf" class="btn btn--dark" download>
-              <svg class="icon" aria-hidden="true"><use href="images/icons.svg#icon-download"></use></svg>
-              Preuzmi PDF
-            </a>
-          </article>
+        <div class="food-grid">
+          <figure class="food-item">
+            <picture>
+              <source srcset="images/food/food-1.webp" type="image/webp">
+              <img src="images/food/food-1.jpeg" alt="Catering — aranžirani nareci i predjela" width="800" height="600" loading="lazy">
+            </picture>
+          </figure>
+          <figure class="food-item">
+            <picture>
+              <source srcset="images/food/food-2.webp" type="image/webp">
+              <img src="images/food/food-2.jpeg" alt="Catering — pečenje i domaća jela" width="800" height="600" loading="lazy">
+            </picture>
+          </figure>
+          <figure class="food-item">
+            <picture>
+              <source srcset="images/food/food-3.webp" type="image/webp">
+              <img src="images/food/food-3.jpeg" alt="Catering — svečano poslužena hrana" width="800" height="600" loading="lazy">
+            </picture>
+          </figure>
+          <figure class="food-item">
+            <picture>
+              <source srcset="images/food/food-4.webp" type="image/webp">
+              <img src="images/food/food-4.jpeg" alt="Catering — slani nareci" width="800" height="600" loading="lazy">
+            </picture>
+          </figure>
+          <figure class="food-item">
+            <picture>
+              <source srcset="images/food/food-5.webp" type="image/webp">
+              <img src="images/food/food-5.jpeg" alt="Catering — jela za proslave" width="800" height="600" loading="lazy">
+            </picture>
+          </figure>
+          <figure class="food-item">
+            <picture>
+              <source srcset="images/food/food-6.webp" type="image/webp">
+              <img src="images/food/food-6.webp" alt="Catering — aranžirani stol s hranom" width="800" height="600" loading="lazy">
+            </picture>
+          </figure>
         </div>
+
+        <p class="menu-cta">Za jelovnik prilagođen Vašem događaju, <a href="#kontakt">kontaktirajte nas</a> — rado ćemo pripremiti ponudu prema Vašim potrebama.</p>
       </div>
     </section>
 
@@ -331,20 +416,20 @@
       <div class="container">
         <header class="section-header">
           <span class="section-label">Kontakt</span>
-          <h2 class="section-title">Rezervirajte svoj termin</h2>
-          <p class="section-desc">Javite nam se s povjerenjem — rado ćemo odgovoriti na sva pitanja i pomoći vam isplanirati savršen događaj.</p>
+          <h2 class="section-title">Kontaktirajte nas</h2>
+          <p class="section-desc">Javite nam se s povjerenjem — rado ćemo odgovoriti na sva pitanja i pomoći Vam isplanirati događaj.</p>
         </header>
 
         <div class="contact-grid">
           <div class="contact-list">
-            <a href="tel:+385989352150" class="contact-link">
+            <a href="tel:+385919263660" class="contact-link">
               <svg class="contact-link__icon" aria-hidden="true"><use href="images/icons.svg#icon-phone"></use></svg>
               <span>
                 <span class="contact-link__label">Telefon</span>
-                <span class="contact-link__value">+385 98 935 2150</span>
+                <span class="contact-link__value">+385 91 926 3660</span>
               </span>
             </a>
-            <a href="https://wa.me/385989352150" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/385919263660" class="contact-link" target="_blank" rel="noopener noreferrer">
               <svg class="contact-link__icon" aria-hidden="true"><use href="images/icons.svg#icon-whatsapp"></use></svg>
               <span>
                 <span class="contact-link__label">WhatsApp</span>
@@ -355,7 +440,7 @@
               <svg class="contact-link__icon" aria-hidden="true"><use href="images/icons.svg#icon-envelope"></use></svg>
               <span>
                 <span class="contact-link__label">E-mail</span>
-                <span class="contact-link__value">Pošaljite nam e-mail</span>
+                <span class="contact-link__value">cvilinderantonija@gmail.com</span>
               </span>
             </a>
             <a href="https://www.google.com/maps/place/Bellevue/@46.0859285,15.8322467,17z" class="contact-link" target="_blank" rel="noopener noreferrer">
@@ -385,7 +470,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <p class="footer-brand__name">Event Krauss</p>
-          <p class="footer-brand__text">Restoran Bellevue — premium prostor za vjenčanja, proslave i poslovne događaje u Klokovcu.</p>
+          <p class="footer-brand__text">Restoran Bellevue — organizacija proslava, catering i najam napuhanaca u Klokovcu.</p>
           <div class="footer-social">
             <a href="https://web.facebook.com/profile.php?id=61565451771376" class="footer-social__link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <svg class="icon" aria-hidden="true"><use href="images/icons.svg#icon-facebook"></use></svg>
@@ -408,9 +493,9 @@
         <div>
           <p class="footer-heading">Kontakt</p>
           <ul class="footer-links">
-            <li><a href="tel:+385989352150">+385 98 935 2150</a></li>
-            <li><a href="https://wa.me/385989352150">WhatsApp</a></li>
-            <li><a href="mailto:cvilinderantonija@gmail.com">E-mail</a></li>
+            <li><a href="tel:+385919263660">+385 91 926 3660</a></li>
+            <li><a href="https://wa.me/385919263660">WhatsApp</a></li>
+            <li><a href="mailto:cvilinderantonija@gmail.com">cvilinderantonija@gmail.com</a></li>
             <li>Klokovec 185, Klokovec</li>
           </ul>
         </div>

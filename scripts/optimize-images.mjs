@@ -7,39 +7,54 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
 const imagesDir = path.join(root, 'images');
 const galleryDir = path.join(imagesDir, 'gallery');
+const heroDir = path.join(imagesDir, 'hero');
+const foodDir = path.join(imagesDir, 'food');
 
 const galleryFiles = [
   'noc_izvana',
-  'dan_izvana',
   'img1',
   'img2',
   'img3',
-  'img4',
-  'img5',
-  'img6',
+  'uredjenje-stolova',
+  'detalj-svadbenog-stola',
+  'velika-kuca-napuhanac',
+  'cp-napuhanac',
+  'minions-napuhanac',
 ];
 
-fs.mkdirSync(galleryDir, { recursive: true });
+const foodFiles = [
+  'food-1.jpeg',
+  'food-2.jpeg',
+  'food-3.jpeg',
+  'food-4.jpeg',
+  'food-5.jpeg',
+  'food-6.webp',
+];
 
-async function exportGalleryWebp(base) {
-  const input = path.join(galleryDir, `${base}.jpg`);
-  if (!fs.existsSync(input)) {
-    console.log(`${base}: skipped (missing ${base}.jpg)`);
+async function exportWebpFromJpg(inputPath, outputPath) {
+  if (!fs.existsSync(inputPath)) {
+    console.log(`skipped (missing ${inputPath})`);
     return;
   }
 
-  await sharp(input)
+  await sharp(inputPath)
+    .rotate()
     .webp({ quality: 82 })
-    .toFile(path.join(galleryDir, `${base}.webp`));
+    .toFile(outputPath);
 
-  const webpSize = fs.statSync(path.join(galleryDir, `${base}.webp`)).size;
-  console.log(`${base}: webp ${Math.round(webpSize / 1024)}KB`);
+  const webpSize = fs.statSync(outputPath).size;
+  console.log(`${path.basename(outputPath)}: ${Math.round(webpSize / 1024)}KB`);
+}
+
+async function exportGalleryWebp(base) {
+  const input = path.join(galleryDir, `${base}.jpg`);
+  await exportWebpFromJpg(input, path.join(galleryDir, `${base}.webp`));
 }
 
 async function exportHero() {
-  const input = path.join(imagesDir, 'header.jpg');
+  const input = path.join(heroDir, 'naslovna.jpg');
   if (!fs.existsSync(input)) {
-    console.log('header: skipped (missing header.jpg source)');
+    console.log('hero: skipped (missing naslovna.jpg)');
     return;
   }
 
@@ -50,20 +65,47 @@ async function exportHero() {
 
   await pipeline
     .clone()
-    .jpeg({ quality: 80, mozjpeg: true })
-    .toFile(path.join(imagesDir, 'header-opt.jpg'));
+    .jpeg({ quality: 82, mozjpeg: true })
+    .toFile(path.join(heroDir, 'naslovna-opt.jpg'));
 
   await pipeline
     .clone()
-    .webp({ quality: 80 })
-    .toFile(path.join(imagesDir, 'header-opt.webp'));
+    .webp({ quality: 82 })
+    .toFile(path.join(heroDir, 'naslovna-opt.webp'));
 
-  const jpgSize = fs.statSync(path.join(imagesDir, 'header-opt.jpg')).size;
-  const webpSize = fs.statSync(path.join(imagesDir, 'header-opt.webp')).size;
-  console.log(`header: jpg ${Math.round(jpgSize / 1024)}KB | webp ${Math.round(webpSize / 1024)}KB`);
+  const jpgSize = fs.statSync(path.join(heroDir, 'naslovna-opt.jpg')).size;
+  const webpSize = fs.statSync(path.join(heroDir, 'naslovna-opt.webp')).size;
+  console.log(`hero: jpg ${Math.round(jpgSize / 1024)}KB | webp ${Math.round(webpSize / 1024)}KB`);
+}
+
+async function exportFoodImages() {
+  for (const file of foodFiles) {
+    const input = path.join(foodDir, file);
+    if (!fs.existsSync(input)) {
+      console.log(`food ${file}: skipped`);
+      continue;
+    }
+
+    const base = path.parse(file).name;
+    const output = path.join(foodDir, `${base}.webp`);
+
+    if (file.endsWith('.webp')) {
+      console.log(`food ${base}: already webp`);
+      continue;
+    }
+
+    await sharp(input)
+      .rotate()
+      .resize({ width: 800, withoutEnlargement: true })
+      .webp({ quality: 82 })
+      .toFile(output);
+
+    console.log(`food ${base}: webp ready`);
+  }
 }
 
 for (const base of galleryFiles) {
   await exportGalleryWebp(base);
 }
 await exportHero();
+await exportFoodImages();

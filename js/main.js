@@ -101,13 +101,46 @@
     });
   });
 
-  if (typeof GLightbox !== 'undefined') {
-    GLightbox({
-      selector: '.gallery-grid .gallery-item',
+  var lightboxInstance = null;
+
+  function initLightbox() {
+    if (typeof GLightbox === 'undefined') return;
+
+    if (lightboxInstance && typeof lightboxInstance.destroy === 'function') {
+      lightboxInstance.destroy();
+    }
+
+    lightboxInstance = GLightbox({
+      selector: '.gallery-grid .gallery-item:not(.is-hidden)',
       touchNavigation: true,
       loop: true,
       openEffect: 'fade',
       closeEffect: 'fade'
     });
   }
+
+  initLightbox();
+
+  var galleryFilters = document.querySelectorAll('.gallery-filter');
+  var galleryItems = document.querySelectorAll('.gallery-item[data-category]');
+
+  galleryFilters.forEach(function (button) {
+    button.addEventListener('click', function () {
+      var filter = button.getAttribute('data-filter');
+
+      galleryFilters.forEach(function (btn) {
+        var isActive = btn === button;
+        btn.classList.toggle('is-active', isActive);
+        btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      });
+
+      galleryItems.forEach(function (item) {
+        var category = item.getAttribute('data-category');
+        var show = filter === 'all' || category === filter;
+        item.classList.toggle('is-hidden', !show);
+      });
+
+      initLightbox();
+    });
+  });
 })();
