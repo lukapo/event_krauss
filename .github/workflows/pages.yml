@@ -30,7 +30,7 @@ jobs:
         run: |
           mkdir site
           cp index.html .nojekyll site/
-          cp -r css js images magnific-popup site/
+          cp -r css js images site/
           if [ -d menus ]; then cp -r menus site/; fi
 
       - name: Setup Pages

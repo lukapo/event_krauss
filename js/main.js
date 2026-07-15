@@ -101,12 +101,13 @@
     });
   });
 
-  if (window.jQuery && jQuery.fn.magnificPopup) {
-    jQuery('.gallery-grid').magnificPopup({
-      delegate: 'a',
-      type: 'image',
-      gallery: { enabled: true },
-      mainClass: 'mfp-fade'
+  if (typeof GLightbox !== 'undefined') {
+    GLightbox({
+      selector: '.gallery-grid .gallery-item',
+      touchNavigation: true,
+      loop: true,
+      openEffect: 'fade',
+      closeEffect: 'fade'
     });
   }
 })();
